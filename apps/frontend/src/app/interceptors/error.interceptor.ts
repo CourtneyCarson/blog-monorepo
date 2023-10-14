@@ -27,7 +27,7 @@ export class ErrorInterceptor implements HttpInterceptor {
           this.authService.logout(); // If it's a 401 error, call a method in the "authService" to log the user out.
           location.reload(); // Reload the page to ensure a fresh state after logging out
         }
-        return throwError(() => error?.error?.message); // Return an observable error with a custom error message from the error object, if available.
+        return throwError(() => error.message); // Return an observable error with a custom error message from the error object, if available.
       })
     );
   }

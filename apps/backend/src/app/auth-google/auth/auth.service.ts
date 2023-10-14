@@ -10,6 +10,7 @@ export class AuthService {
   private readonly JWT_SECRET_KEY =
     'q8g4WqHtHgAJM2G69z9OkcIy0aN/HPEzzy5R2/7HUh/8w4hp/EZz4NXxUWSzddUhxA3a4Pj5x627HlXpWEg5DlYhzyn5dgTSX+Mjl46EOip8JE+QnZRZgTUVO80xw7uqaVtVZ6sFtDK6rv8+HWBkDyrdlf9Rbidf7qg/cuNjxoOz/pvaize7DRogi3YeHwknFlwD604GGxxtyGBQugQHHY41NBrKzhgVYdxhRnBQTST8DD9zndaC8l4KmQ2b1P6JK2Jz0pAZcsHR5Wh3K3M+t86ecXkezk8UOFU+XRqOsmmB/VzCoHo/vhXCcJ85KJ48T0IE3TjqD2s+YvD8bYR+Sw=='; // <- replace this with your secret key
 
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
   constructor(/*private readonly usersService: UsersService*/) {}
 
   async validateOAuthLogin(
